@@ -4,14 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
-    <title>santas-gift-sorter</title>
+    <title>Christmas Dinner Picker</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="container"></div>
+      <div class="container-top">
+        <header>
+          <img src="/DeliverRudolph-top-logo.png" alt="" class="top-logo" />
+          <h3>
+            <em><span>Sleighing Hunger</span> One Delivery <br />At A Time!</em>
+          </h3>
+        </header>
+        <section class="how-it-works">
+          <p>
+            Share your guest count with our eager Elves, and we'll swiftly wrap
+            up and deliver your Christmas feast!<br />
+            <span>(no assembly required!)</span>
+          </p>
+        </section>
+
+        <h4>Dietary Requirements</h4>
+        <section class="dietary-requirements-el">
+          <div class="choice-box">
+            <label for="vegetarian">
+              Vegetarian
+              <input type="checkbox" id="vegetarian" class="checkbox-style" />
+            </label>
+            <label for="nut">
+              Nut Allergies
+              <input type="checkbox" id="nut" class="checkbox-style" />
+            </label>
+          </div>
+          <div class="choice-box">
+            <label for="gluten">
+              Gluten free
+              <input type="checkbox" id="gluten" class="checkbox-style" />
+            </label>
+            <label for="vegan">
+              Vegan
+              <input type="checkbox" id="vegan" class="checkbox-style" />
+            </label>
+          </div>
+        </section>
+
+        <section class="input-guest-el">
+          <input
+            type="number"
+            id="number-input"
+            placeholder="Add guest number"
+          />
+          <button id="submit-button">Submit</button>
+        </section>
+      </div>
+      <div class="container-middle">
+        <img
+          src="/app-graphic.png"
+          alt="application graphic"
+          class="app-graphic"
+        />
+        <div class="menu-output"></div>
+      </div>
     </div>
-    <script src="index.js"></script>
+
+    <script src="index.js" type="module"></script>
   </body>
 </html>
